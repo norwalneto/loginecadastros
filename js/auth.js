@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = passwordInput.value;
 
         // Envio dos dados para o backend (processo de login)
-        fetch('http://localhost:8080/api/usuarios/login', {
+        fetch('https://eususer.azurewebsites.net/api/usuarios/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const username = signupUsernameInput.value;
 
         // Verifica se a resposta está no formato esperado
-        fetch('http://localhost:8080/api/usuarios/cadastrar', {
+        fetch('https://eususer.azurewebsites.net/api/usuarios/cadastrar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
